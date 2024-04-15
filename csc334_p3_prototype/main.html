@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title> Radio Demo </title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+  
+    <body>
+        <div style="display: flex;">
+            <!-- Sidebar -->    
+            <div class="sidebar">
+                <!-- MIGHT NOT BE NECESSARY -->
+                <!-- If implemented: Implement Functionality to make it expand to the left-->
+            </div>
+            
+
+            <!-- Main Content -->
+            <div class="body-content">
+                <div class="top-content border-styling shared-styling">
+                    <h3 style="text-align: center" id="currentstation"> Radio </h3>
+                    <!-- TODO: fix width at one point -->
+                    <p> Get Current Time Here</p>
+                    <input type="range" min="1" max="100" value="1" class="slider1" id="myVolume">
+                    <br/>
+                    <button id="backbtn" class="button-styling">
+                        <img src="https://64.media.tumblr.com/0a688609a7588fcef260e723157b0b51/6b64d8db2609dbea-72/s250x400/91786784ebfd86733af20cadec1fe34a3ec2f979.png" title="Back" class="img-styling"/>
+                    </button> 
+                    <button id="playbtn" class="button-styling">
+                        <img src="https://64.media.tumblr.com/c39172e9841a9e2782e03cde86bed9e2/6b64d8db2609dbea-6c/s250x400/66aa04bbf365ae37d111e5eb1a0d5a2d40a9e16c.png" title="Pause/Play" class="img-styling" id="pauseplay"/>
+                    </button> 
+                    <button id="nextbtn" class="button-styling">
+                        <img src="https://64.media.tumblr.com/0c509d2b833354838c1adfe6b4167c6a/6b64d8db2609dbea-9f/s250x400/a562fe45f8900e98839385bbea707c97dabb4528.png" title="Next" class="img-styling"/>
+                    </button> 
+                    <button id="uploadbtn" class="button-styling">
+                        <img src="https://64.media.tumblr.com/6fe60dad89434935ad141c4b90b34d7b/6b64d8db2609dbea-ab/s250x400/e0487896c85640a37a2f3bab02f880218b95cf4f.png" title="Upload" class="img-styling"/>
+                    </button> 
+                    <button id="shufflebtn" class="button-styling">
+                        <img src="https://64.media.tumblr.com/8d485513a9d322373204fa17c24b6b4a/6b64d8db2609dbea-37/s250x400/566f5b1d2c33c18130c0912e52ede2e2a790a5b8.png" title="Shuffle" class="img-styling"/>
+                    </button> 
+                    <button id="repeatbtn" class="button-styling">
+                        <img src="https://64.media.tumblr.com/d9b2f621d52ce32690c39f85c394f83c/6b64d8db2609dbea-26/s250x400/d2b734cf8e7ce1f41b22ddfa47da0b50ffb0a2df.png" title="Repeat" class="img-styling"/>
+                    </button> 
+                    <input type="range" min="1" max="100" value="1" class="slider2" id="myRange">
+                    <!-- TODO: fix label location? -->
+                    <label for="myRange" id="volumeslider"> Volume </label>
+                    <br/> <br/>
+                </div>
+                <div class="bottom-content border-styling shared-styling">
+                    <h3> Playlist </h3>
+                    <!-- TODO add actual playlist fetched from some upload list-->
+                    <!-- TODO also add height + scrollbar -->
+                    <ol id="playlist" class="playlist-styling"></ol>
+                </div>
+            </div>
+
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
